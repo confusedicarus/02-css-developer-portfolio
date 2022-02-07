@@ -2,24 +2,15 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
-  box-sizing: border;
-}
-
-main {
-  flex-wrap: wrap;
-}
-
-body {
-  margin: 0;
 }
 
 aside {
   flex: 1;
-  background-color: blueviolet;
+  background-color: white;
   padding: 20px;
-  margin-left: 15%;
-}
-header {
+  min-height: 80%;
+  border-right: solid #2e3844 3px;
+  
 }
 
 h1 {
@@ -29,16 +20,15 @@ h1 {
 
 h2 {
   margin: 1% 7%;
+  padding-left: 3%;
   font-size: 2rem;
   color: #548c89;
 }
-
-main {
-  flex: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: auto;
-  display: flex;
+h3 {
+  margin-right: 3%;
+  font-size: 2rem;
+  color: #548c89;
+  text-align: right;
 }
 
 nav {
@@ -51,39 +41,23 @@ nav ul {
   display: flex;
   justify-content: space-around;
 }
-section {
-  flex: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: auto;
-}
 
-a {
+ul li a {
   color: white;
+}
+a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
 
-li {
-}
-
-span {
-  display: block;
-  padding: 15px;
-  border: solid #2e3844 3px;
-  max-width: 391px;
-}
-
 #about-me {
   border-top: solid #2e3844 3px;
-  margin: ;
-  margin: 0 5%;
+  padding: 2%;
+  margin: 0 7%;
 }
-
-.about-me {
-  border-top: solid #2e3844 5px;
-  margin: 10px 7% 5px 7%;
-  padding-top: 5px;
+#work {
+  display: flex;
+  flex-direction: row;
 }
 .cards {
   flex: 1 1 33%;
@@ -91,7 +65,7 @@ span {
   border: solid #548c89 3px;
   width: 33%;
 }
-.card-main {
+.card prio {
   flex: 2 1 391px;
   max-width: 391px;
   box-sizing: border-box;
@@ -103,6 +77,10 @@ span {
   justify-content: space-around;
   color: #548c89;
   text-decoration: underline;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 .info-me {
   display: block;
