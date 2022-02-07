@@ -2,7 +2,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
-  display: box;
+  box-sizing: border;
 }
 
 main {
@@ -33,6 +33,14 @@ h2 {
   color: #548c89;
 }
 
+main {
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  display: flex;
+}
+
 nav {
   background-color: #2e3844;
 }
@@ -42,6 +50,12 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+section {
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 a {
@@ -53,25 +67,17 @@ a {
 li {
 }
 
+span {
+  display: block;
+  padding: 15px;
+  border: solid #2e3844 3px;
+  max-width: 391px;
+}
+
 #about-me {
   border-top: solid #2e3844 3px;
   margin: ;
   margin: 0 5%;
-}
-
-#work .project {
-  flex: 1 0 500px;
-  padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px;
-}
-
-#work {
-  display: flex;
-  margin-top: 5%;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .about-me {
@@ -80,8 +86,15 @@ li {
   padding-top: 5px;
 }
 .cards {
-  display: block;
-  overflow: auto;
+  flex: 1 1 33%;
+  box-sizing: border-box;
+  border: solid #548c89 3px;
+  width: 33%;
+}
+.card-main {
+  flex: 2 1 391px;
+  max-width: 391px;
+  box-sizing: border-box;
   border: solid #548c89 3px;
 }
 .contact-me {
