@@ -47,8 +47,6 @@ h4 {
   color: ivory;
   justify-content: center;
 }
-section {
-}
 main {
   display: block;
   width: 100vw;
@@ -80,7 +78,7 @@ ul li a {
   text-align: center;
 }
 #profile-pic {
-  max-width: 100%%;
+  max-width: 100%;
 }
 #work {
   display: flex;
@@ -119,9 +117,7 @@ ul li a {
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
 }
-.cards .project {
-  /* flex: 4 1 200%; */
-}
+
 .card:hover {
   box-shadow: inset 0px 0px 8px #548c89 #2e3844;
 }
