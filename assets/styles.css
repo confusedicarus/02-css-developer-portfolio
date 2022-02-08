@@ -1,3 +1,7 @@
+/* todo
+ WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others*/
+
 :root {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -8,6 +12,7 @@ aside {
   background-color: white;
   padding: 20px;
   min-height: 80%;
+  max-width: 10%;
   border-right: solid #2e3844 3px;
   background: linear-gradient(#2e3844, #548c89);
 }
@@ -17,7 +22,7 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -29,8 +34,14 @@ h2 {
 h3 {
   margin-right: 3%;
   font-size: 2rem;
-  color: #548c89;
+  color: white;
   text-align: right;
+}
+section {
+}
+main {
+  display: block;
+  width: 100vw;
 }
 
 nav {
@@ -50,12 +61,21 @@ ul li a {
 
 #about-me {
   border-top: solid #2e3844 3px;
-  padding: 2%;
-  margin: 0 7%;
+  padding: 1%;
+  margin: 1% 7%;
+}
+#contact-me {
+  text-decoration: underline;
+  text-align: center;
 }
 #work {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+}
+.about-me {
+  display: block;
+  max-height: 200px;
 }
 .background-head {
   display: flex;
@@ -76,6 +96,7 @@ ul li a {
   font-size: 2rem;
 }
 .cards {
+  background: linear-gradient(#2e3844, #548c89);
   box-sizing: border-box;
   border: solid white 3px;
   max-width: 391px;
@@ -83,6 +104,9 @@ ul li a {
   margin: 1% 3%;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
+}
+.cards .project {
+  flex: 2 1 100;
 }
 .card:hover {
   box-shadow: inset 0px 0px 8px #548c89 #2e3844;
@@ -111,6 +135,8 @@ ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: linear-gradient(#2e3844, #548c89);
+  width: 100%;
 }
 .flex-container p {
   text-align: center;
@@ -124,6 +150,9 @@ ul li a {
   display: flex;
   flex-direction: row;
   background: linear-gradient(#2e3844, #548c89);
+}
+.test {
+  flex: 1;
 }
 
 .main-header {
