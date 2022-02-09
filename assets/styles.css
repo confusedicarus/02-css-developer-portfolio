@@ -54,6 +54,8 @@ main {
 
 nav {
   background-color: #2e3844;
+  justify-content: center;
+  height: 50px;
 }
 
 nav ul {
@@ -61,6 +63,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  padding-top: 15px;
 }
 
 ul li a {
@@ -72,13 +75,14 @@ ul li a {
   padding: 1%;
   margin: 1% 7%;
   color: ivory;
+  margin-right: 0%;
 }
 #contact-me {
   text-decoration: underline;
   text-align: center;
 }
 #profile-pic {
-  max-width: 100%;
+  max-width: 75%;
 }
 #work {
   display: flex;
@@ -88,6 +92,7 @@ ul li a {
 .about-me {
   display: inline-flex;
   max-height: 100%;
+  height: 100%;
 }
 .background-head {
   display: flex;
@@ -144,8 +149,15 @@ ul li a {
   flex-direction: column;
 }
 .feature-image {
-  margin: 0 auto;
-  padding: 0 30%;
+  display: flex;
+  min-height: 300px;
+  background-image: url(https://images.unsplash.com/photo-1638913658828-afb88c3d4d11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60);
+  background-position: center;
+  background-size: cover;
+  justify-content: end;
+  align-items: flex-end;
+  max-width: 100%;
+  cursor: pointer;
 }
 .flex-container {
   display: flex;
@@ -181,6 +193,9 @@ ul li a {
 .main-header h1 {
   text-align: center;
 }
+.profile-pic {
+  width: 50%;
+}
 .work-head {
   border-right: solid #2e3844 5px;
   padding-right: 5%;
@@ -192,10 +207,14 @@ ul li a {
   .main-header h1 {
     font-size: 4rem;
   }
+  nav {
+    height: 100%;
+  }
   nav ul {
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
+    padding-top: 0%;
   }
   .contact-me {
     flex-direction: column;
